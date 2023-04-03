@@ -7,6 +7,7 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    guicursor = "a:block-blinkon0", -- Vim cursor always block
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -18,6 +19,7 @@ return {
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
   },
 }
+
 -- If you need more control, you can use the function()...end notation
 -- return function(local_vim)
 --   local_vim.opt.relativenumber = true
