@@ -5,19 +5,6 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   { import = "astrocommunity.colorscheme.catppuccin", lazy = false },
-  {
-    import = "astrocommunity.completion.copilot-lua-cmp",
-    opts = {
-      suggestion = {
-        keymap = {
-          accept = "<C-l>",
-          accept_word = false,
-          accept_line = false,
-          next = "<C-.>",
-          prev = "<C-,>",
-          dismiss = "<C/>",
-        },
-      },
-    },
-  },
+  { import = "astrocommunity.completion.copilot-lua-cmp", enabled = true },
+  { import = "astrocommunity.note-taking.neorg", enabled = true },
 }
